@@ -1,5 +1,5 @@
 ---
--  hosts: windowsservers
+- hosts: windowsservers
     collections:
       - ansible.windows
     vars_files:
