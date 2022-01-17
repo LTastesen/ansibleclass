@@ -36,7 +36,7 @@
       zone: public
       service: http
       permanent: yes
-      state: enabled:
+      state: enabled
     notify: firewall reload
 
   handlers:
