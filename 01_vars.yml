@@ -1,5 +1,5 @@
 ---
-- hosts: lunuxservers
+- hosts: linuxservers
   become: yes
 
   vars:
