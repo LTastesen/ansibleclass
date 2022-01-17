@@ -3,7 +3,7 @@
   become: yes
 
   vars:
-    package: 
+    package:
       - httpd
       - mariadb-server
       - php
@@ -16,11 +16,11 @@
       state: latest
 
   - name: Enable httpd service
-  ansible.builtin.systemd:
-    name: httpd
-    state: started
-    enabled: yes
-  register: httpd_status
+    ansible.builtin.systemd:
+      name: httpd
+      state: started
+      enabled: yes
+    register: httpd_status
 
   - name: Show Status
     debug:
