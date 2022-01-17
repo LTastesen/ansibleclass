@@ -3,7 +3,11 @@
   become: yes
 
   vars:
-    package: httpd
+    package: 
+      - httpd
+      - mariadk-server
+      - php
+      - php-mysqlnd
 
   tasks:
   - name: Install Packages
